@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jsondata.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <!--高德地图-->
+    <script src="https://webapi.amap.com/maps?v=1.4.8&key=c89d20393334447b6578704750b46059&plugin=AMap.MarkerClusterer,AMap.PlaceSearch,AMap.Autocomplete,AMap.Geocoder"></script>
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css" />
+    <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+    <!--引入UI组件库（1.0版本） -->
+    <script src="http://webapi.amap.com/ui/1.0/main.js"></script>
+</head>
+
+<body>
+    <div id="Maps"></div>
+
+    <script>
+        var markers = [];
+        var map = new AMap.Map('Maps', {
+            resizeEnable: true,
+            zoom: 4,
+            center: [105, 24]
+        });
+        for (var i = 0; i < capitals.length; i += 1) {
+
+            markersposition = capitals[i].center;
+            var marker = new AMap.Marker({
+                map: this.map,
+                position: markersposition,
+                offset: new AMap.Pixel(-15, -15),
+                icon: new AMap.Icon({
+                    size: new AMap.Size(40, 50),
+                    image: "images/tag.png",
+                    imageOffset: new AMap.Pixel(0, 0)
+                })
+            })
+            this.markers.push(marker);
+            //点击标记点弹出信息窗体
+            ClickMarker(marker, markersposition);
+        }
+        //gridSize 聚合计算时网格的像素大小
+        new AMap.MarkerClusterer(this.map, this.markers, {
+            gridSize: 80
+        });
+
+        function ClickMarker(marker, markersposition) {
+            AMap.event.addListener(marker, "click", function () {
+                markerInfoWindow(markersposition);
+            });
+        };
+
+        function markerInfoWindow(markersposition) {
+            var _this = this;
+            _this.infoWindow = new AMap.InfoWindow({
+                content: " <div class='card' style=' width:300px;height:auto;'>" +
+                    "   <img class='card-img-top' src='images/wechat.jpg'  alt='Card image cap'>" +
+                    "   <ul class='list-group list-group-flush'>" +
+                    "    <li class='list-group-item'>姓名：Hubert</li>" +
+                    "    <li class='list-group-item'>星座：巨蟹座</li>" +
+					"    <li class='list-group-item'>微信公众号：HubertBiyo</li>" +
+                    "    <li class='list-group-item'>职业：.Net 开发</li>" +
+                    "    <li class='list-group-item'>联系电话：15130079715</li>" +
+                    "   </ul>" +
+                    "   <div class='card-block'>" +
+                    "      <a href='#' class='btn btn-primary pull-right'>查看详情</a>" +
+                    "   </div >" +
+                    " </div > ",
+                //基点指向marker的头部位置
+                offset: new AMap.Pixel(0, -15)
+            })
+            _this.infoWindow.open(_this.map, markersposition);
+        }
+    </script>
+</body>
+
+</html>
