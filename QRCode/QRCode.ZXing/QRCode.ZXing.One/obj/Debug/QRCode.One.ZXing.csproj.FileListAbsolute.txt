@@ -1,0 +1,17 @@
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\QRCode.One.ZXing.exe.config
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\QRCode.One.ZXing.exe
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\QRCode.One.ZXing.pdb
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\zxing.dll
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\zxing.presentation.dll
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\zxing.pdb
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\zxing.xml
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\zxing.presentation.pdb
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\bin\Debug\zxing.presentation.xml
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.csprojAssemblyReference.cache
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.FrmZXing.resources
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.Properties.Resources.resources
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.csproj.GenerateResource.cache
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.csproj.CoreCompileInputs.cache
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.csproj.CopyComplete
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.exe
+E:\Hubert_GitHub\.Net Framework\QRCode\QRCode.One\QRCode.One.ZXing\obj\Debug\QRCode.One.ZXing.pdb
