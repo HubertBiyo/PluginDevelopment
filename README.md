@@ -3,7 +3,7 @@
 ### 高德地图 
     高德地图：聚合标点、点击弹出信息窗体
     
-   · [高德地图聚合标点](http://map.xinyo.xin)
+   · [高德地图聚合标点](http://map.hubert.gq/Index.html)
     
 ### 海康web3.0插件开发
     基于海康sdk，实现NVR设备通过ipv6（IP加端口号外网访问查看视频的效果）
